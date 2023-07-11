@@ -21,6 +21,10 @@ body {
   width: 77%;
 }
 
+header {
+  /* ------------------------------- Header Top ------------------------------- */
+  /* ------------------------------ Header Bottom ----------------------------- */
+}
 header .headerTop {
   width: 100%;
   background-color: #f5f5f5;
@@ -41,7 +45,7 @@ header .headerTop .container .headerTopLeft .mailPart i {
   width: 14px;
   height: 14px;
   color: #252525;
-  padding-top: 8px;
+  padding-top: 5px;
 }
 header .headerTop .container .headerTopLeft .mailPart .mail {
   color: #1c1c1c;
@@ -93,6 +97,11 @@ header .headerTop .container .headerTopRight .country {
   transform: translateY(-4px);
   margin-right: 40px;
   position: relative;
+  transition: 0.4s ease;
+}
+header .headerTop .container .headerTopRight .country:hover .dropdownList {
+  visibility: visible;
+  opacity: 1;
 }
 header .headerTop .container .headerTopRight .country img {
   width: 27px;
@@ -113,6 +122,23 @@ header .headerTop .container .headerTopRight .country .countryList .countryItem 
   width: 14px;
   height: 13px;
   margin-left: 4px;
+}
+header .headerTop .container .headerTopRight .country .dropdownList {
+  position: absolute;
+  background: #222222;
+  width: 100px;
+  text-align: left;
+  padding: 5px 0;
+  left: 0;
+  top: 30px;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+}
+header .headerTop .container .headerTopRight .country .dropdownList .dropdownItem a {
+  font-size: 14px;
+  padding: 5px 10px;
+  color: #ffffff;
 }
 header .headerTop .container .headerTopRight .country::after {
   position: absolute;
@@ -155,6 +181,33 @@ header .headerBottom .container .navBar .navList .navItem {
   display: inline-block;
   margin-right: 50px;
   position: relative;
+}
+header .headerBottom .container .navBar .navList .navItem:hover .dropdownMenuList {
+  opacity: 1;
+  visibility: visible;
+}
+header .headerBottom .container .navBar .navList .navItem .dropdownMenuList {
+  position: absolute;
+  left: 0;
+  top: 31px;
+  background: #222222;
+  width: 180px;
+  z-index: 9;
+  padding: 3px 0;
+  transition: all, 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+header .headerBottom .container .navBar .navList .navItem .dropdownMenuList .dropdownMenuItem {
+  padding: 5px 15px;
+}
+header .headerBottom .container .navBar .navList .navItem .dropdownMenuList .dropdownMenuItem a {
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+header .headerBottom .container .navBar .navList .navItem .dropdownMenuList .dropdownMenuItem:hover a {
+  color: #7fad39;
 }
 header .headerBottom .container .navBar .navList .navItem a {
   font-size: 14px;
@@ -202,10 +255,10 @@ header .headerBottom .container .shop .shopList .icon {
   position: absolute;
 }
 header .headerBottom .container .shop .shopList .first {
-  right: 307px;
+  right: 20.4%;
 }
 header .headerBottom .container .shop .shopList .second {
-  right: 275px;
+  right: 18.2%;
 }
 header .headerBottom .container .shop p {
   font-size: 14px;
@@ -213,7 +266,7 @@ header .headerBottom .container .shop p {
 }
 header .headerBottom .container .shop p span {
   color: #252525;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 main .productSection {
@@ -227,7 +280,7 @@ main .productSection .container .productTitle {
 main .productSection .container .productTitle::after {
   position: absolute;
   left: 0;
-  bottom: -15px;
+  bottom: -7px;
   right: 0;
   height: 4px;
   width: 80px;
@@ -254,7 +307,7 @@ main .productSection .container .productNames .productList .productItem a {
 main .productSection .container .productNames .productList .all::after {
   position: absolute;
   left: 2;
-  bottom: -10px;
+  bottom: 0px;
   right: 0;
   height: 2px;
   width: 20px;
@@ -268,6 +321,7 @@ main .productSection .container .cards {
 }
 main .productSection .container .cards .card {
   padding: 5px 10px;
+  position: relative;
 }
 main .productSection .container .cards .card .cardImg {
   width: 262px;
@@ -284,5 +338,117 @@ main .productSection .container .cards .card .productPrice a {
 }
 main .productSection .container .cards .card .productPrice span {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 900;
+}
+main .productSection .container .cards .card .imgHover {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100%;
+  text-align: center;
+  top: 70%;
+  left: 25%;
+  gap: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0);
+  transition: 0.4s ease;
+}
+main .productSection .container .cards .card .imgHover .imgHoverItem a {
+  font-size: 16px;
+  color: #1c1c1c;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  background: #ffffff;
+  display: block;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+main .productSection .container .cards .card .imgHover .imgHoverItem a:hover {
+  color: #fff;
+  background-color: #7fad39;
+  transform: rotate(360deg);
+}
+main .productSection .container .cards .card:hover .imgHover {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-1%);
+  top: 60%;
+}
+main .productSection .container .productSecondPart {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-around;
+}
+main .productSection .container .productSecondPart img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 47.5%;
+  height: 263px;
+}
+main .blogSection {
+  width: 100%;
+  padding: 50px 0;
+}
+main .blogSection .container .blogTitle {
+  text-align: center;
+  color: #1c1c1c;
+  font-weight: 900;
+  position: relative;
+  font-size: 36px;
+}
+main .blogSection .container .blogTitle::after {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  right: 0;
+  height: 4px;
+  width: 80px;
+  background: #7fad39;
+  content: "";
+  margin: 0 auto;
+}
+main .blogSection .container .blogCards {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  /* -------------------------------- Blog Card ------------------------------- */
+}
+main .blogSection .container .blogCards .blogCard {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 365px;
+  height: 258.8px;
+}
+main .blogSection .container .blogCards .blogCard .cardInfo .dateList {
+  display: flex;
+  padding-top: 25px;
+  margin-bottom: 15px;
+}
+main .blogSection .container .blogCards .blogCard .cardInfo .dateList .dateItem {
+  font-size: 16px;
+  color: #b2b2b2;
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+}
+main .blogSection .container .blogCards .blogCard .cardInfo .cardTitle {
+  margin-bottom: 12px;
+}
+main .blogSection .container .blogCards .blogCard .cardInfo .cardTitle a {
+  font-size: 20px;
+  color: black;
+  font-weight: 900;
+}
+main .blogSection .container .blogCards .blogCard .cardInfo p {
+  font-size: 16px;
+  color: #6f6f6f;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */

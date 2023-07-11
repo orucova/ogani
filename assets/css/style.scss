@@ -18,9 +18,12 @@ body {
   padding: 0 10px;
   margin: 0 auto;
   width: 77%;
+
+
 }
 //* ------------------------------ Start Header ------------------------------ */
 header {
+  /* ------------------------------- Header Top ------------------------------- */
   .headerTop {
     width: 100%;
     // height: 47px;
@@ -38,7 +41,7 @@ header {
             width: 14px;
             height: 14px;
             color: #252525;
-            padding-top: 8px;
+            padding-top: 5px;
           }
           .mail {
             color: #1c1c1c;
@@ -92,6 +95,13 @@ header {
           transform: translateY(-4px);
           margin-right: 40px;
           position: relative;
+          transition: .4s ease;
+          &:hover{
+            .dropdownList{
+              visibility: visible;
+              opacity: 1;
+            }
+          }
           img {
             width: 27px;
             height: 14px;
@@ -114,7 +124,28 @@ header {
               }
             }
           }
+          .dropdownList{
+            position: absolute;
+            background: #222222;
+    width: 100px;
+    text-align: left;
+    padding: 5px 0;
+  
+    left: 0;
+    top: 30px;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    .dropdownItem{
+      a{
+        font-size: 14px;
+        padding: 5px 10px;
+        color: #ffffff;
+      }
+    }
+          }
         }
+
         .country::after {
           position: absolute;
           right: -15px;
@@ -140,6 +171,7 @@ header {
       }
     }
   }
+  /* ------------------------------ Header Bottom ----------------------------- */
   .headerBottom {
     width: 100%;
     .container {
@@ -157,6 +189,37 @@ header {
             display: inline-block;
             margin-right: 50px;
             position: relative;
+            &:hover{
+              .dropdownMenuList{
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+            .dropdownMenuList{
+              position: absolute;
+    left: 0;
+    top: 31px;
+    background: #222222;
+    width: 180px;
+    z-index: 9;
+    padding: 3px 0;
+    transition: all, 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    .dropdownMenuItem{
+      padding: 5px 15px;
+      a{
+        color: #ffffff;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+      &:hover{
+        a{
+          color: #7fad39;
+        }
+      }
+    }
+            }
             a {
               font-size: 14px;
               color: #252525;
@@ -210,10 +273,10 @@ header {
             position: absolute;
           }
           .first {
-            right: 307px;
+            right: 20.4%;
           }
           .second {
-            right: 275px;
+            right: 18.2%;
           }
         }
         p {
@@ -221,7 +284,7 @@ header {
           color: #6f6f6f;
           span {
             color: #252525;
-            font-weight: 700;
+            font-weight: 900;
           }
         }
       }
@@ -243,7 +306,7 @@ main {
       .productTitle::after {
         position: absolute;
         left: 0;
-        bottom: -15px;
+        bottom: -7px;
         right: 0;
         height: 4px;
         width: 80px;
@@ -270,7 +333,7 @@ main {
           .all::after {
             position: absolute;
             left: 2;
-            bottom: -10px;
+            bottom: 0px;
             right: 0;
             height: 2px;
             width: 20px;
@@ -285,6 +348,7 @@ main {
         margin-top: 40px;
         .card {
           padding: 5px 10px;
+          position: relative;
           .cardImg {
             width: 262px;
             height: 270px;
@@ -300,14 +364,137 @@ main {
             }
             span {
               font-size: 18px;
-              font-weight: 400;
+              font-weight: 900;
+            }
+          }
+          .imgHover{
+            width: 100%;
+            display: flex;
+            position: absolute;
+    left: 0;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    top: 70%;
+    left: 25%;
+    gap: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(0);
+    transition: .4s ease;
+.imgHoverItem{
+  a{
+    font-size: 16px;
+    color: #1c1c1c;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    background: #ffffff;
+    display: block;
+    border-radius: 50%;
+    transition: .3s;
+&:hover{
+  color: #fff;
+  background-color: #7fad39;
+  transform: rotate(360deg);
+}
+  }
+}
+          }
+          &:hover{
+            .imgHover{
+              visibility: visible;
+              opacity: 1;
+              transform: translateY(-1%);
+              top: 60%;
+            }
+          }
+        }
+      }
+      .productSecondPart{
+        padding-top: 55px;
+        display: flex;
+        justify-content: space-around;
+        img{
+          object-fit: contain;
+          width: 47.5%;
+          height: 263px;
+        }
+      }
+    }
+  }
+  //* --------------------------- End Product Section -------------------------- */
+  //? --------------------------- Start Blog Section --------------------------- */
+  .blogSection{
+    width: 100%;
+    padding: 50px 0;
+    .container{
+      .blogTitle{
+text-align: center;
+color: #1c1c1c;
+    font-weight: 900;
+    position: relative;
+    font-size: 36px;
+      }
+      .blogTitle::after{
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+        right: 0;
+        height: 4px;
+        width: 80px;
+        background: #7fad39;
+        content: "";
+        margin: 0 auto;
+      }
+      .blogCards{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+        /* -------------------------------- Blog Card ------------------------------- */
+        .blogCard{
+          object-fit: contain;
+          width: 365px;
+          height: 258.8px;
+          .cardInfo{
+            .dateList{
+              display: flex;
+              padding-top: 25px;
+              margin-bottom: 15px;
+              .dateItem{
+                font-size: 16px;
+                color: #b2b2b2;
+                list-style: none;
+                display: inline-block;
+                margin-right: 15px
+              }
+            }
+            .cardTitle{
+              margin-bottom: 12px;
+    //           font-size: 18px;
+    //           color: #111111;
+    // font-weight: 400;
+    a{
+      font-size: 20px;
+    color: black;
+    font-weight: 900;
+    }
+            }
+            p{
+              font-size: 16px;
+              color: #6f6f6f;
+              font-weight: 600;
+              line-height: 26px;
+              margin-bottom: 15px;
             }
           }
         }
       }
     }
   }
+  //* ---------------------------- End Blog Section ---------------------------- */
 }
-//* --------------------------- End Product Section -------------------------- */
 
 //? -------------------------------- End Main -------------------------------- */
