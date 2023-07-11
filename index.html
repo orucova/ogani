@@ -3,85 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/scss/style.css" />
     <title>Document</title>
   </head>
   <body>
     <!--* ---------------------------- Start Header ----------------------------- -->
     <header>
-      
-          <!-- ----------------------------- Header Top ------------------------------ -->
-          <div class="headerTop">
-            <div class="container">
-
-                <div class="headerTopLeft">
-                
-                    <div class="mailPart">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p class="mail">hello@colorlib.com</p>
-                    </div>
-                    <div class="headerPrice">
-                        <span> Free Shipping for all Order of $99</span>
-                    </div>
-                </div>
-                <div class="headerTopRight">
-                    <ul class="socialList">
-                        <li class="socialItem"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li class="socialItem"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li class="socialItem"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li class="socialItem"><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                    </ul>
-                    <div class="country">
-                      <ul class="dropdownList">
-                        <li class="dropdownItem"><a href="#">Spanish</a></li>
-                        <li class="dropdownItem"><a href="#">English</a></li>
-                      </ul>
-                        <img src="./assets/image/flag.webp" alt="flag">
-                        <ul class="countryList">
-                            <li class="countryItem"><a href="#">English <i class="fa-solid fa-chevron-down"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="logIn">
-                        <a href="#"><i class="fa-solid fa-user"></i></a>
-                        <a class="logInText" href="#">Login</a>
-                    </div>
-                </div>
+      <!-- ----------------------------- Header Top ------------------------------ -->
+      <div class="headerTop">
+        <div class="container">
+          <div class="headerTopLeft">
+            <div class="mailPart">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="mail">hello@colorlib.com</p>
+            </div>
+            <div class="headerPrice">
+              <span> Free Shipping for all Order of $99</span>
             </div>
           </div>
-          <!-- ---------------------------- Header Bottom ---------------------------- -->
-            <div class="headerBottom">
-              <div class="container">
-                <div class="logo">
-                  <a href="./index.html"><img src="./assets/image/logo.png" alt=""></a>
-                </div>
-                <nav class="navBar">
-                  <ul class="navList">
-                    <li class="navItem active"><a href="#">HOME</a></li>
-                    <li class="navItem"><a href="#">SHOP</a></li>
-                    <li class="navItem"><a href="#">PAGES</a>
-                    <ul class="dropdownMenuList">
-                      <li class="dropdownMenuItem"><a href="#">Shop Details</a></li>
-                      <li class="dropdownMenuItem"><a href="#">Shop Cart</a></li>
-                      <li class="dropdownMenuItem"><a href="#">Check Out</a></li>
-                      <li class="dropdownMenuItem"><a href="#">Blog Details</a></li>
-                    </ul></li>
-                    <li class="navItem"><a href="#">BLOG</a></li>
-                    <li class="navItem"><a href="#">CONTACT</a></li>
-                  </ul>
-                </nav>
-                <div class="shop">
-
-                  <ul class="shopList">
-                    <li class="shopItem"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                   <a href="#"><span class="icon first">1</span></a> 
-                    <li class="shopItem"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                   <a href="#"><span class="icon second">3</span></a> 
-                  </ul>
-                  <p>item: <span>$150.00</span></p>
-                </div>
-              </div>
+          <div class="headerTopRight">
+            <ul class="socialList">
+              <li class="socialItem">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li class="socialItem">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li class="socialItem">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li class="socialItem">
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </li>
+            </ul>
+            <div class="country">
+              <img src="./assets/image/flag.webp" alt="flag" />
+              <ul class="countryList">
+                <li class="countryItem">
+                  <a href="#"
+                    >English <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                </li>
+              </ul>
+              <ul class="dropdownList">
+                <li class="dropdownItem"><a href="#">Spanish</a></li>
+                <li class="dropdownItem"><a href="#">English</a></li>
+              </ul>
             </div>
-          
+            <div class="logIn">
+              <a href="#"><i class="fa-solid fa-user"></i></a>
+              <a class="logInText" href="#">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------- Header Bottom ---------------------------- -->
+      <div class="headerBottom">
+        <div class="container">
+          <div class="row">
+            <div class="row">
+              <div class="logo">
+                <a href="./index.html"
+                  ><img src="./assets/image/logo.png" alt=""
+                /></a>
+              </div>
+              <nav class="navBar">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="navList">
+                  <li class="navItem active"><a href="#">HOME</a></li>
+                  <li class="navItem"><a href="#">SHOP</a></li>
+                  <li class="navItem">
+                    <a href="#">PAGES</a>
+                    <ul class="dropdownMenuList">
+                      <li class="dropdownMenuItem">
+                        <a href="#">Shop Details</a>
+                      </li>
+                      <li class="dropdownMenuItem">
+                        <a href="#">Shop Cart</a>
+                      </li>
+                      <li class="dropdownMenuItem">
+                        <a href="#">Check Out</a>
+                      </li>
+                      <li class="dropdownMenuItem">
+                        <a href="#">Blog Details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navItem"><a href="#">BLOG</a></li>
+                  <li class="navItem"><a href="#">CONTACT</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="shop">
+              <ul class="shopList">
+                <li class="shopItem">
+                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <a href="#" class="iconItem"
+                  ><span class="icon first">1</span></a
+                >
+                <li class="shopItem">
+                  <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                </li>
+                <a href="#" class="iconItem"
+                  ><span class="icon second">3</span></a
+                >
+              </ul>
+              <p>item: <span>$150.00</span></p>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -114,9 +145,15 @@
                 <span>$30.00</span>
               </div>
               <ul class="imgHover">
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-retweet"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
               </ul>
             </div>
             <!-- End Card -->
@@ -132,9 +169,15 @@
                 <span>$30.00</span>
               </div>
               <ul class="imgHover">
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-retweet"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
               </ul>
             </div>
             <!-- End Card -->
@@ -150,9 +193,15 @@
                 <span>$30.00</span>
               </div>
               <ul class="imgHover">
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-retweet"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
               </ul>
             </div>
             <!-- End Card -->
@@ -168,9 +217,15 @@
                 <span>$30.00</span>
               </div>
               <ul class="imgHover">
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-retweet"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
               </ul>
             </div>
             <!-- End Card -->
@@ -186,9 +241,15 @@
                 <span>$30.00</span>
               </div>
               <ul class="imgHover">
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-retweet"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
               </ul>
             </div>
             <!-- End Card -->
@@ -204,9 +265,15 @@
                 <span>$30.00</span>
               </div>
               <ul class="imgHover">
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-retweet"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
               </ul>
             </div>
             <!-- End Card -->
@@ -222,9 +289,15 @@
                 <span>$30.00</span>
               </div>
               <ul class="imgHover">
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-retweet"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
               </ul>
             </div>
             <!-- End Card -->
@@ -240,27 +313,33 @@
                 <span>$30.00</span>
               </div>
               <ul class="imgHover">
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-retweet"></i></a></li>
-                <li class="imgHoverItem"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                </li>
+                <li class="imgHoverItem">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
               </ul>
             </div>
             <!-- End Card -->
           </div>
           <div class="productSecondPart">
-            <img src="./assets/image/card part1.webp" alt="card part 1">
-            <img src="./assets/image/card part 2.webp" alt="card part 2">
+            <img src="./assets/image/card part1.webp" alt="card part 1" />
+            <img src="./assets/image/card part 2.webp" alt="card part 2" />
           </div>
         </div>
       </section>
       <!--* ------------------------- End Product Section ------------------------- -->
       <!-- ?------------------------- Start Blog Section -------------------------- -->
-      <section class="blogSection">
+      <!-- <section class="blogSection">
         <div class="container">
           <h2 class="blogTitle">From The Blog</h2>
-          <div class="blogCards">
-            <!-- ------------------------------ Blog Card ------------------------------ -->
-            <div class="blogCard">
+          <div class="blogCards"> -->
+      <!-- ------------------------------ Blog Card ------------------------------ -->
+      <!-- <div class="blogCard">
               <img src="./assets/image/blogcard1.webp" alt="blog card 1">
               <div class="cardInfo">
                 <ul class="dateList">
@@ -270,9 +349,9 @@
                 <h5 class="cardTitle"><a href="#">Cooking tips make cooking simple</a></h5>
                 <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
               </div>
-            </div>
-                        <!-- ------------------------------ Blog Card ------------------------------ -->
-                        <div class="blogCard">
+            </div> -->
+      <!-- ------------------------------ Blog Card ------------------------------ -->
+      <!-- <div class="blogCard">
                           <img src="./assets/image/blogcard2.webp" alt="blog card 2">
                           <div class="cardInfo">
                             <ul class="dateList">
@@ -282,9 +361,9 @@
                             <h5 class="cardTitle"><a href="#">6 ways to prepare breakfast for 30</a></h5>
                             <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
                           </div>
-                        </div>
-                                    <!-- ------------------------------ Blog Card ------------------------------ -->
-            <div class="blogCard">
+                        </div> -->
+      <!-- ------------------------------ Blog Card ------------------------------ -->
+      <!-- <div class="blogCard">
               <img src="./assets/image/blogcard3.webp" alt="blog card 3">
               <div class="cardInfo">
                 <ul class="dateList">
@@ -297,21 +376,19 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- *-------------------------- End Blog Section --------------------------- -->
     </main>
     <!--? ------------------------------ End Main ------------------------------- -->
     <!--* ---------------------------- Start Footer ----------------------------- -->
     <footer>
-      <div class="container">
-        
-      </div>
+      <div class="container"></div>
     </footer>
     <!--? ----------------------------- End Footer ------------------------------ -->
     <!--! ---------------------------- Font Awesome ----------------------------- -->
     <script
-    src="https://kit.fontawesome.com/c10ff97e1e.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/c10ff97e1e.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
